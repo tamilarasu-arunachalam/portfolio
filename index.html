@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tamilarasu</title>
+    <meta name="author" content="Tamilarasu Arunachalam">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+
+<body onload="showAlert();">
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-light" role="navigation">
+            <div class="container">
+                <button type="button" class="navbar-toggler collapsed mr-auto rounded-0 border-0" data-toggle="collapse"
+                    data-target="#navbarCollapse">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                </button>
+                <a href="#" class="navbar-brand ml-auto"><img src="assets/Tamilarasu1.jpg" alt="" class="rounded-circle"
+                        height="30" weight="30"></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <script>
+            function showAlert() {
+                var pathRegex = /index\.html\?formSubmitted\=true/;
+                if (pathRegex.test(window.location.href)) {
+                    alert("Form Submitted");
+                    history.pushState({}, null, 'index.html#contact');
+                }
+            }
+        </script>
+        <section style="height: 106vh;" id="home" class="pt-5">
+            <div class="container">
+                <div class="row justify-content-center home">
+                    <img src="assets/Tamilarasu1.jpg" alt="Tamilarasu Arunachalam" class="img-fluid" width="612">
+                    <h1 class="text-center img-text">I am <span id="typed"></span></h1>
+                </div>
+            </div>
+        </section>
+        <section style="height: 100vh;" id="about" class="mt-5 pt-5">
+            <div class="container h-100">
+                <h1 class="text-center">About</h1>
+                <div class="row justify-content-center pt-4 align-items-center h-100">
+                    <div class="col">
+                        <p class="text-justify">I am Tamilarasu, a computer science graduate with extended skills on
+                            technologies like HTML5, CSS3, Javascript, PHP, MySQL and MongoDB. I am very much
+                            passionate
+                            about Web Development and Cloud Computing. I do projects while learning a specific
+                            technology
+                            for deep understanding and practical knowledge. I build small and real world projects to
+                            level
+                            up myself into a proffessional level. I do freelance on building websites for businesses
+                            and
+                            make them alive on internet world. I build e-commerce website, butsiness website,
+                            portfolio
+                            website, event website. And I provide deployment and maintanence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="mt-5 pt-5">
+            <div class="container">
+                <div class="row justify-content-center pt-4 align-items-center h-25">
+                    <div class="col">
+                        <h1 class="text-center">Education</h1>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-sm">
+                        <!--spacer-->
+                    </div>
+                    <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                        <h5 class="m-2">
+                            <span class="badge badge-pill bg-light border"><i class="fa fa-graduation-cap"></i></span>
+                        </h5>
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-sm py-2">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="float-right small">2019-2021</div>
+                                <h4 class="card-title">Master of Computer Applications</h4>
+                                <div class="float-right small font-weight-bold">7.58 CGPA</div>
+                                <p class="card-text">Kongu Engineering College</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-sm py-2">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="float-right small">2016-2019</div>
+                                <h4 class="card-title">B.Sc., Computer Science</h4>
+                                <div class="float-right small font-weight-bold">61%</div>
+                                <p class="card-text">Kongu Arts and Science College, Erode</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                        <h5 class="m-2">
+                            <span class="badge badge-pill bg-light border"><i class="fa fa-graduation-cap"></i></span>
+                        </h5>
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!--spacer-->
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-sm">
+                        <!--spacer-->
+                    </div>
+                    <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                        <h5 class="m-2">
+                            <span class="badge badge-pill bg-light border"><i class="fa fa-book"></i></span>
+                        </h5>
+                        <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-sm py-2">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="float-right small">2015-2016</div>
+                                <h4 class="card-title">HSC - State Board</h4>
+                                <div class="float-right small font-weight-bold">76.3%</div>
+                                <p class="card-text">Shri Ganga Higher Secondary School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-sm py-2">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="float-right small">2013-2014</div>
+                                <h4 class="card-title">SSLC - State Board</h4>
+                                <div class="float-right small font-weight-bold">92%</div>
+                                <p class="card-text">Shri Ganga Matriculation School</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                        <div class="row h-50">
+                            <div class="col border-right"></div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                        <h5 class="m-2">
+                            <span class="badge badge-pill badge-light border"><i class="fa fa-book"></i></span>
+                        </h5>
+                        <div class="row h-50">
+                            <div class="col border-right"></div>
+                            <div class="col">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <!-- space -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="mt-5 pt-5" style="height:100vh;">
+            <div class="container h-100">
+                <h1 class="text-center">Skills</h1>
+                <div class="row justify-content-center align-items-center h-75">
+                    <div class="container">
+                        <div class="row m-2 justify-content-center">
+                            <div class="col-md-4 col-sm-12 mt-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-64/html-2752158-2284975.png"
+                                            alt="" width="40" height="40" title="Hyper Text Markup Language"
+                                            class="img-fluid">
+                                        <div class="float-right">
+                                            <h3>HTML 5</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-512/css3-9-1175237.png" alt=""
+                                            width="40" height="40" title="Cascading Style Sheets" class="img-fluid">
+                                        <div class="float-right">
+                                            <h3>CSS 3</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-64/javascript-2752148-2284965.png"
+                                            alt="" width="40" height="40" title="Vannila Javascript" class="img-fluid">
+                                        <div class="float-right">
+                                            <h3>JavaScript</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-2 justify-content-center">
+                            <div class="col-md-4 mt-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-64/php-2752101-2284918.png"
+                                            alt="" width="40" height="40" title="PHP" class="img-fluid text-center">
+                                        <div class="float-right">
+                                            <h3>PHP</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-and-moodle-elearningworld-5.png"
+                                            alt="" width="40" height="40" title="MySQL" class="img-fluid text-center">
+                                        <div class="float-right">
+                                            <h3>MySQL</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-64/mongodb-4-1175139.png"
+                                            alt="" width="40" height="40" title="Mongo DB"
+                                            class="img-fluid text-center">
+                                        <div class="float-right">
+                                            <h3>Mongodb</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="" id="projects" class="mt-5 pt-5">
+            <div class="container mt-5">
+                <div class="row justify-content-center align-items-center h-25">
+                    <div class="col">
+                        <h1 class="text-center">Projects</h1>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4 my-3">
+                        <div class="card bg-default">
+                            <a href="http://genderequalityclub.kongu.edu" target="_blank"><img
+                                    src="https://i.ibb.co/LdnnbtG/zreyas.png" alt="zreyas"
+                                    class="card-img-top img-fluid"></a>
+                            <div class="card-footer">
+                                <b><a href="http://genderequalityclub.kongu.edu">Zreyas'21</a></b> - an event
+                                website
+                                for gender equality club
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <div class="card bg-default">
+                            <a href="http://querypup.rf.gd" target="_blank"><img
+                                    src="https://i.ibb.co/hgZnk2T/querypup-scr.png" alt="Querypup"
+                                    class="card-img-top img-fluid"></a>
+                            <div class="card-footer">
+                                <b><a href="http://querypup.rf.gd">Querypup</a></b> - a blogging portal for everyone
+                                to
+                                use
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <div class="card bg-default">
+                            <a href="http://gadgetskart.rf.gd" target="_blank"><img
+                                    src="https://i.ibb.co/WkrxBcw/Gadgets-Kart-scr.png" alt="GadgetsKart"
+                                    class="card-img-top img-fluid"></a>
+                            <div class="card-footer">
+                                <b><a href="http://gadgetskart.rf.gd">Gadgetskart</a></b> - a multivendor e-commerce
+                                website
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4 my-3">
+                        <div class="card bg-default">
+                            <a href="#" target="_blank"><img src="https://i.ibb.co/Bq1Q12P/novelbuff.png"
+                                    alt="Pollution control board " class="card-img-top img-fluid"></a>
+                            <div class="card-footer">
+                                <b><a href="http://pcb.rf.gd">Novelbuff</a></b> - a bookstore application built with
+                                mongodb as database
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <div class="card bg-default">
+                            <a href="http://pcb.rf.gd" target="_blank"><img src="https://i.ibb.co/px0cZd8/pcb-scr.png"
+                                    alt="Pollution control board " class="card-img-top img-fluid"></a>
+                            <div class="card-footer">
+                                <b><a href="http://pcb.rf.gd">PCB</a></b> - a pollution control board website for
+                                management
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background-color:whitesmoke;" id="contact" class="mt-5 pt-5">
+            <div class="container h-100">
+                <h1 class="text-center">Get in touch</h1>
+                <div class="row justify-content-center align-items-center h-75">
+                    <div class="col-md-6 col-sm-12 mb-5 pb-5">
+                        <script type="text/javascript">var submitted = false;</script>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                            onload="if(submitted) {location.reload();location='index.html?formSubmitted=true';}"></iframe>
+                        <form
+                            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScEE56CwjPy9BIO4it9wUmA2QyLzNo8LazL9BkDDBZtWAZXsA/formResponse"
+                            method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                            <div class="input-group mt-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text rounded-0"><i class="fa fa-user-o"></i></div>
+                                </div>
+                                <input type="text" name="entry.484882079" class="form-control rounded-0"
+                                    placeholder="Name">
+                            </div>
+                            <div class="input-group mt-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text rounded-0"><i class="fa fa-envelope-o"></i></div>
+                                </div>
+                                <input type="email" name="emailAddress" class="form-control rounded-0"
+                                    placeholder="Email">
+                            </div>
+                            <div class="input-group mt-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text rounded-0"><i class="fa fa-font"></i></div>
+                                </div>
+                                <input type="text" name="entry.75064675" class="form-control rounded-0"
+                                    placeholder="Subject">
+                            </div>
+                            <div class="input-group mt-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text rounded-0"><i class="fa fa-pencil"></i></div>
+                                </div>
+                                <textarea name="entry.824239037" id="" cols="30" rows="10"
+                                    class="form-control rounded-0" placeholder="Message"></textarea>
+                            </div>
+                            <div class="text-center mt-2"><input type="submit" value="Send"
+                                    class="btn btn-outline-secondary rounded-0 w-25">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-secondary text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    &copy;
+                    <script>var date = new Date().getFullYear(); document.write(date);</script>
+                    <a class="text-decoration-none text-light">Tamilarasu</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.js"
+        integrity="sha512-HkPTAAm+s4i8XlHc0dmKTmR7gEo5W3mwtgRNqOMkYdWAK/OaS89ZwQ2jIOyVx7ZrtCEDxb245+rMjN/mmOj/DQ=="
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

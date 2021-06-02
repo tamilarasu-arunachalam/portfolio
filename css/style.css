@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* Disable scrollbar Firefox */
+@-moz-document url-prefix() {
+    html{
+      scrollbar-width: none;
+    }
+  }
+/* Disable scrollbar Chrome */
+::-webkit-scrollbar{
+    display: none;
+}
+html{
+    margin:0;
+}
+body{
+    margin:0;
+}
+/* preloader gif */
+body {
+    overflow: hidden;
+  }
+  
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;/* change if the mask should have another color then white */
+    z-index: 1000;/* makes sure it stays on top */
+  }
+  #status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%; /* centers the loading animation horizontally one the screen */
+    top: 50%;/* centers the loading animation vertically one the screen */
+    background-image: url(https://miro.medium.com/max/441/1*9EBHIOzhE1XfMYoKz1JcsQ.gif);
+    /* background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif); */
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;/* is width and height divided by two */
+  }
+/* push from left menu */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 58px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 50%;
+        height: 100%;
+        background:white;
+    }
+    .navbar-collapse.collapsing {
+        left: -50%;
+        transition: height 0s ease;
+    }
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 500ms ease-in-out;
+    }
+    /* .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    } */
+}
+.navbar-light{
+    z-index:999 !important;
+}
+/* clear outline of toggler */
+.navbar-light .navbar-toggler{
+    outline:none;
+}
+/* navbar change to X on collapse */
+.navbar-toggler span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
+/* top line needs a little padding */
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+/**Animate X open into hamburger menu*/
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
+/*Animate hamburger into X.*/
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg) ;
+}
+#home{
+    background-color:gainsboro;
+}
+#home{
+    position: relative;
+}
+#home .img-fluid{
+    opacity:0.8;
+}
+.img-text{
+    position: absolute;
+    z-index:99 !important;
+    top:70%;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff0008, #ffc745, #20ff79);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff0008, #ffc745, #20ff79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 60px;
+    font-weight:600;
+}
+.typed-cursor{
+    font-size: 50px;
+    opacity:0.2;
+    background-color:rgb(196, 190, 190) !important;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.4s infinite;
+}
+#contact ::-webkit-input-placeholder{
+    color:grey;
+}
+#contact ::placeholder{
+    color:grey;
+}
+#contact textarea{
+    height:100px;
+    resize: none;
+}
+.footer{
+    bottom: 0;
+    left:0;
+    right:0;
+    height: 20px; /* Set the fixed height of the footer here */
+    line-height: 20px; /* Vertically center the text there */
+}
+
