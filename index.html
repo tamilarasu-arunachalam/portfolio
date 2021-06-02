@@ -7,7 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tamilarasu</title>
     <meta name="author" content="Tamilarasu Arunachalam">
+    <meta name="keywords"
+        content="Tamilarasu Arunachalam, web developer in coimbatore, web designer in coimbatore, web developer in tiruppur, web designer in tiruppur">
+    <meta name="description"
+        content="I am Tamilarasu, a computer science graduate with extended skills on technologies like HTML5, CSS3, Javascript, PHP, MySQL and MongoDB. I am very much passionate about Web Development and Cloud Computing. I do projects while learning a specific technology for deep understanding and practical knowledge.">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -70,7 +75,7 @@
             <div class="container">
                 <div class="row justify-content-center home">
                     <img src="assets/Tamilarasu1.jpg" alt="Tamilarasu Arunachalam" class="img-fluid" width="612">
-                    <h1 class="text-center img-text">I am <span id="typed"></span></h1>
+                    <h1 class="text-center img-text bg-dark">I am <span id="typed"></span></h1>
                 </div>
             </div>
         </section>
@@ -413,13 +418,38 @@
             </div>
         </section>
     </main>
-    <footer class="footer bg-secondary text-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    &copy;
-                    <script>var date = new Date().getFullYear(); document.write(date);</script>
-                    <a class="text-decoration-none text-light">Tamilarasu</a>
+    <div class="container-fluid">
+        <div class="row text-center sticky-bottom">
+            <div class="col-md-12">
+                <a href="https://www.facebook.com/Tamilarasu21" target="_blank"
+                    class="px-4 text-decoration-none text-secondary" id="fb">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/tamil_arasu_a/" target="_blank"
+                    class="px-4 text-decoration-none text-secondary" id="ig">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/tamilarasu-arunachalam/" target="_blank"
+                    class="px-4 text-decoration-none text-secondary" id="li">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="mailto:tamilarasu.arunachalam@gmail.com" target="_blank"
+                    class="px-4 text-decoration-none text-secondary" id="em">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-light">
+        <div class="container-fluid">
+            <div class="row bg-secondary">
+                <div class="col-md-12 text-center foot">
+                    &copy; <a class="text-decoration-none text-light">Tamilarasu</a>
+                    <span id="year"></span>
+                    <script>
+                        document.getElementById("year").innerHTML = new Date().getFullYear();
+                    </script>
                 </div>
             </div>
         </div>
