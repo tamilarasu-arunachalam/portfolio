@@ -190,3 +190,15 @@ body {
 #em:hover i {
   color: #c40831;
 }
+.sticky {
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
