@@ -39,7 +39,7 @@ body {
   position: absolute;
   left: 50%; /* centers the loading animation horizontally one the screen */
   top: 50%; /* centers the loading animation vertically one the screen */
-  background-image: url(https://miro.medium.com/max/441/1*9EBHIOzhE1XfMYoKz1JcsQ.gif);
+  background-image: url(https://icons8.com/preloaders/preloaders/1474/Walk.gif);
   /* path to your loading animation */
   background-repeat: no-repeat;
   background-position: center;
@@ -54,9 +54,10 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-    width: 50%;
+    width: 99%;
     height: 100%;
     background: #f8f9fa;
+    text-align:center;
   }
   .navbar-collapse.collapsing {
     left: -50%;
@@ -69,6 +70,18 @@ body {
   /* .navbar-toggler.collapsed ~ .navbar-collapse {
         transition: left 500ms ease-in-out;
     } */
+  #home .img-text{
+    font-size: 40px;
+  }
+  .nav-item .nav-link{
+    margin-bottom:20px;
+  }
+  .sticky{
+    text-align:left;
+  }
+  #fb i, #ig i, #li i, #em i{
+    font-size:20px;
+  }
 }
 .navbar-light {
   z-index: 999 !important;
@@ -179,11 +192,33 @@ body {
   font-size: small;
   width: 100%;
 }
-#fb i,
-#ig i,
-#li i,
+#fb i{
+  color: black;
+  margin-top:2px;
+  margin-bottom:2px;
+  margin-right:20px;
+  margin-left:20px;
+}
+#ig i{
+  color: black;
+  margin-top:2px;
+  margin-bottom:2px;
+  margin-right:20px;
+  margin-left:20px;
+}
+#li i{
+  color: black;
+  margin-top:2px;
+  margin-bottom:2px;
+  margin-right:20px;
+  margin-left:20px;
+}
 #em i {
-  color: white;
+  color: black;
+  margin-top:2px;
+  margin-bottom:2px;
+  margin-right:20px;
+  margin-left:20px;
 }
 #fb:hover i {
   color: #0674e7;
@@ -197,19 +232,23 @@ body {
 #em:hover i {
   color: #c40831;
 }
+#fb i, #ig i, #li i, #em i{
+  font-size:30px;
+}
 .sticky {
   left: 0;
   right: 0;
   width: 100%;
-  padding: none;
-  background-color: lightgray;
-  border-top: 1px solid grey;
+  height:36px;
+  background-color: white;
+  text-align:center;
+  border-top: 1px dotted lightgrey;
 }
 .fixed {
   position: fixed;
   bottom: 0;
   width: 100%;
   padding: none;
-  background-color: lightgray;
-  border-top: 1px solid grey;
+  background-color: white;
+  border-top: 1px dotted lightgrey;
 }
