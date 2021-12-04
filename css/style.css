@@ -192,47 +192,47 @@ body {
   font-size: small;
   width: 100%;
 }
-#fb i{
+.sticky #fb i{
   color: black;
   margin-top:2px;
   margin-bottom:2px;
   margin-right:20px;
   margin-left:20px;
 }
-#ig i{
+.sticky #ig i{
   color: black;
   margin-top:2px;
   margin-bottom:2px;
   margin-right:20px;
   margin-left:20px;
 }
-#li i{
+.sticky #li i{
   color: black;
   margin-top:2px;
   margin-bottom:2px;
   margin-right:20px;
   margin-left:20px;
 }
-#em i {
+.sticky #em i {
   color: black;
   margin-top:2px;
   margin-bottom:2px;
   margin-right:20px;
   margin-left:20px;
 }
-#fb:hover i {
+.sticky #fb:hover i {
   color: #0674e7;
 }
-#ig:hover i {
+.sticky #ig:hover i {
   color: #bd30ad;
 }
-#li:hover i {
+.sticky #li:hover i {
   color: #0a66c2;
 }
-#em:hover i {
+.sticky #em:hover i {
   color: #c40831;
 }
-#fb i, #ig i, #li i, #em i{
+.sticky #fb i, #ig i, #li i, #em i{
   font-size:30px;
 }
 .sticky {
